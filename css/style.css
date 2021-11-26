@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: lightcoral;
+  height: 6rem;
+  align-items: center;
+  border: 4px black solid;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.dropdown {
+  display: none;
+  margin-right: 8%;
+  background-color: lightcoral;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+
+  padding: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: -1.2px;
+
+  border: black 4px solid;
+  border-radius: 10px;
+}
+
+.dropdown:hover {
+  background-color: #da4b4b;
+}
+
+.dropdown__div {
+  display: none;
+  position: relative;
+
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 4px black solid;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+.dropdown__a {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.dropdown__a:nth-child(2) {
+  border-top: 4px black solid;
+  border-bottom: 4px black solid;
+}
+
+.flex__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__bt {
+  color: white;
+  border: white 4px solid;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin: 1rem 10%;
+  text-align: justify;
+  background-color: lightcoral;
+  padding: 0.5rem 2rem;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container__title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 575px) {
+  .dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 440px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 346px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+}
